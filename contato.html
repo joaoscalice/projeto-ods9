@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="shortcut icon" href="./imgs/png_icon.png">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>Contato | ODS9</title>
+</head>
+
+<body>
+    <header id="cabecalho">
+        <div id="cLogo">
+            <a href="index.html"><img id="logo" src="./imgs/png_icon.png" alt="Logo ODS9"></a>
+            <a id="labelLogo" href="index.html">ODS9</a>
+        </div>
+
+        <nav>
+            <a href="./#cOque">O que é?</a>
+            <a href="./#cODS">Os ODS</a>
+            <a href="./#cSobre">Sobre ODS9</a>
+            <a href="./#cExemplos">Exemplos</a>
+        </nav>
+
+        <div id="cContato">
+            <a id="contato" href="contato.html"><i class="fa-solid fa-people-group"></i>Contato</a>
+            <a id="lista" href="lista.html"><i class="fa fa-list-alt" aria-hidden="true"></i>Lista</a>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <div class="conteudo-contato">
+            <h1 class="conteudo-titulo">Contato</h1>
+
+            <form onsubmit="addElemento(); return false;">
+                <div class="grupos-inputs">
+                    <div class="input-label">
+                        <label for="nome">Nome:</label>
+                        <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="email">E-mail:</label>
+                        <input type="email" name="email" id="email" placeholder="Digite seu e-mail" required>
+                    </div>
+                </div>
+
+                <div class="grupos-inputs">
+                    <div class="input-label">
+                        <label for="cidade">Cidade:</label>
+                        <input type="text" name="cidade" id="cidade" placeholder="Digite seu cidade" required>
+                    </div>
+                    <div class="input-label">
+                        <label for="tel">Telefone:</label>
+                        <input type="number" name="tel" id="tel" placeholder="Digite seu telefone" required>
+                    </div>
+                </div>
+
+
+                <div class="input-label">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+                </div>
+
+                <button onclick="addElemento()"><i class="fa-solid fa-envelope"></i>        Enviar</button>
+                <button onclick="limparForm()"><i class="fa fa-trash" aria-hidden="true"></i>      Limpar</button>
+
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        <div class="contatos-grupo">
+            <div class="contato-container">
+                <h2>Pedro</h2>
+                <ul class="lista-icones">
+                    <li><a href="https://github.com/pedrocarvalho3" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/pdr_vinic/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contato-container">
+                <h2>João</h2>
+                <ul class="lista-icones">
+                    <li><a href="https://github.com/joaoscalice" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/joaoscalice/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="contato-container">
+                <h2>Tiago</h2>
+                <ul class="lista-icones">
+                    <li><a href="https://github.com/tiagojqp" target="_blank"><i
+                                class="fa-brands fa-square-github"></i></a></li>
+                    <li><a href="https://www.instagram.com/tiagojqp/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <p>© 2023 ODS9. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
